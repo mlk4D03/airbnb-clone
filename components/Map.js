@@ -45,10 +45,11 @@ function Map({searchResults}) {
                 longitude={result.long}
                 latitude={result.lat}
                 offsetLeft={-20}
-                offsetTop={-10}
+                offsetTop={-15}
                 >
+                    <p className='bg-white p-2 border-solid border-2 font-bold rounded-full'>{result.price}</p>
                     <LocationMarkerIcon className='cursor-pointer h-16 text-red-400
-                    animate-bounce'
+                    animate-bounce hover:text-red-600'
                     onClick={() => setSelectedLocation(result)}/>
                     </Marker>
 
